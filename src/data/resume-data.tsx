@@ -52,12 +52,14 @@ export const RESUME_DATA = {
   work: [
     {
       company: "BLD ACDMY",
+      link: "https://parabol.co",
       badges: ["Remote"],
       title: "Junior Product Manager",
-      start: "2022",
+      logo: ParabolLogo,
+      start: "2021",
       end: "2024",
       description:
-        "Implemented new features, led squad, worked on improving the way developers ship the code.",
+        "Implemented new features, led squad, worked on improving the way developers ship the code, started migration from Emotion to Tailwind CSS and more. Technologies: React, TypeScript, GraphQL",
     },
   ],
   skills: [
