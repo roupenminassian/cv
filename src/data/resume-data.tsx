@@ -26,7 +26,8 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/sydney",
   about: "A Product Manager.",
   summary: "As a Product Manager, I manage products ;)",
-  avatarUrl: "https://www.linkedin.com/in/norarose-aroyan/overlay/photo/",
+  avatarUrl:
+    "https://media.licdn.com/dms/image/D5603AQFaQvY-fHdXmw/profile-displayphoto-shrink_800_800/0/1697517454867?e=1710979200&v=beta&t=0-t6ZAAQWyVF6mOtk50MMBJtsWw0yGECwsqvOACVJBI",
   personalWebsiteUrl: "https://jarocki.me",
   contact: {
     email: "norarosearoyan@gmail.com",
@@ -53,11 +54,38 @@ export const RESUME_DATA = {
       company: "BLD ACDMY",
       badges: ["Remote"],
       title: "Junior Product Manager",
-      start: "2023",
+      start: "2022",
       end: "2024",
       description:
         "Implemented new features, led squad, worked on improving the way developers ship the code.",
     },
   ],
-  skills: ["JavaScript", "Python"],
+  skills: [
+    "JavaScript",
+    "TypeScript",
+    "React/Next.js/Remix",
+    "Node.js",
+    "GraphQL",
+    "Relay",
+    "WebRTC",
+  ],
+  projects: [
+    {
+      title: "Consultly",
+      techStack: [
+        "Side Project",
+        "TypeScript",
+        "Next.js",
+        "Vite",
+        "GraphQL",
+        "WebRTC",
+      ],
+      description: "A platform to build and grow your online business",
+      logo: ConsultlyLogo,
+      link: {
+        label: "consultly.com",
+        href: "https://consultly.com/",
+      },
+    },
+  ],
 } as const;
