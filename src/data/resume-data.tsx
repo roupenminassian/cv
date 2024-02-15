@@ -88,6 +88,17 @@ export const RESUME_DATA = {
       description:
         "Oversaw social media dataset quality control and analyzing metrics to identify suspicious activities, aiding Twitter in misinformation strategy.",
     },
+    {
+      company: "Westpac",
+      link: "https://www.westpac.com.au/",
+      badges: [],
+      title: "Operations Associate",
+      logo: ParabolLogo,
+      start: "2020",
+      end: "2021",
+      description:
+        "Managed system operations, ensuring robust maintenance, configuration, and content management within Westpac",
+    },
   ],
   skills: [
     "Microsoft Azure",
