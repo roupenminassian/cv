@@ -24,7 +24,7 @@ export const RESUME_DATA = {
   initials: "RM",
   location: "Sydney, Australia",
   locationLink: "https://www.google.com/maps/place/sydney",
-  about: "Data Scientest | Machine Learning Engineer.",
+  about: "Data Scientist | Machine Learning Engineer.",
   summary: "Building data-intensive applications.",
   avatarUrl:
     "https://media.licdn.com/dms/image/D5603AQGlrcgLcX9Vpg/profile-displayphoto-shrink_800_800/0/1707890520752?e=1713398400&v=beta&t=r4ZlOu-iCg120E_UkGktpNtKSwhW5-vXIviutNNv_gg",
@@ -74,7 +74,8 @@ export const RESUME_DATA = {
       logo: ParabolLogo,
       start: "2021",
       end: "2023",
-      description: "Conducted research in the machine learning space.",
+      description:
+        "Conducted research in NLP, computer vision, and timeseries fields.",
     },
     {
       company: "DataPoint Armenia",
@@ -85,7 +86,7 @@ export const RESUME_DATA = {
       start: "2020",
       end: "2021",
       description:
-        "CLed data integrity as Lead Data Scientist, overseeing social media dataset quality control and analyzing metrics to identify suspicious activities, aiding Twitter in misinformation strategy.",
+        "Oversaw social media dataset quality control and analyzing metrics to identify suspicious activities, aiding Twitter in misinformation strategy.",
     },
   ],
   skills: [
