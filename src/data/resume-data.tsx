@@ -124,5 +124,15 @@ export const RESUME_DATA = {
         href: "https://ll-mx-twitterx-visualisation.vercel.app/",
       },
     },
+    {
+      title: "Dziv",
+      techStack: ["Scikit-Learn", "Python", "numpy", "pandas", "NLTK", "spaCy"],
+      description: "A comprehensive review on astroturfing on Twitter.",
+      logo: ConsultlyLogo,
+      link: {
+        label: "datapoint.am/dziv/",
+        href: "https://datapoint.am/dziv/",
+      },
+    },
   ],
 } as const;
