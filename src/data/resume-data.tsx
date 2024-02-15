@@ -24,7 +24,7 @@ export const RESUME_DATA = {
   initials: "RM",
   location: "Sydney, Australia",
   locationLink: "https://www.google.com/maps/place/sydney",
-  about: "Data Scientist | Machine Learning Engineer.",
+  about: "Data Scientist | Machine Learning Engineer",
   summary: "Building data-intensive applications.",
   avatarUrl:
     "https://media.licdn.com/dms/image/D5603AQGlrcgLcX9Vpg/profile-displayphoto-shrink_800_800/0/1707890520752?e=1713398400&v=beta&t=r4ZlOu-iCg120E_UkGktpNtKSwhW5-vXIviutNNv_gg",
@@ -62,7 +62,7 @@ export const RESUME_DATA = {
       title: "Machine Learning Engineer",
       logo: ParabolLogo,
       start: "2021",
-      end: "Current",
+      end: "",
       description:
         "Led the end-to-end design, prototyping, and development of a conversational AI agents.",
     },
