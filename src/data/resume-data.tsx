@@ -44,10 +44,14 @@ export const RESUME_DATA = {
     {
       school: "University of Sydney",
       degree: "Bachelor of Medical Science (Neuroscience + Physiology)",
+      start: "",
+      end: "",
     },
     {
       school: "University of New South Wales",
       degree: "Master of Information Technology (Artificial Intelligence)",
+      start: "",
+      end: "",
     },
   ],
   work: [
