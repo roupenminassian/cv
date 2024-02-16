@@ -145,7 +145,7 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "Traffic-AnalysisxBuiltEnvironment",
+      title: "Traffic-AnalysisxUTS",
       techStack: [
         "Scikit-Learn",
         "Python",
@@ -161,6 +161,25 @@ export const RESUME_DATA = {
       link: {
         label: "github.com/roupenminassian/Traffic-AnalysisxBuiltEnvironment",
         href: "https://github.com/roupenminassian/Traffic-AnalysisxBuiltEnvironment",
+      },
+    },
+    {
+      title: "DRNxUTS",
+      techStack: [
+        "Scikit-Learn",
+        "Python",
+        "numpy",
+        "pandas",
+        "GPT3",
+        "BERT",
+        "Transformers",
+      ],
+      description: "Utilising NLP to improve document search.",
+      logo: ConsultlyLogo,
+      link: {
+        label:
+          "github.com/roupenminassian/UTS-DSI-x-Disability-Research-Network",
+        href: "https://github.com/roupenminassian/UTS-DSI-x-Disability-Research-Network",
       },
     },
   ],
