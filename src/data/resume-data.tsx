@@ -134,5 +134,34 @@ export const RESUME_DATA = {
         href: "https://datapoint.am/dziv/",
       },
     },
+    {
+      title: "CRC-P",
+      techStack: ["Scikit-Learn", "Python", "numpy", "pandas", "XGBoost"],
+      description: "Human activity classification using wearable sensor data.",
+      logo: ConsultlyLogo,
+      link: {
+        label: "github.com/roupenminassian/CRC-P",
+        href: "https://github.com/roupenminassian/CRC-P",
+      },
+    },
+    {
+      title: "Traffic-AnalysisxBuiltEnvironment",
+      techStack: [
+        "Scikit-Learn",
+        "Python",
+        "numpy",
+        "pandas",
+        "OpenCV",
+        "Hugging Face",
+        "Transformers",
+        "PyTorch",
+      ],
+      description: "Tool for analysing traffic from footage.",
+      logo: ConsultlyLogo,
+      link: {
+        label: "github.com/roupenminassian/Traffic-AnalysisxBuiltEnvironment",
+        href: "https://github.com/roupenminassian/Traffic-AnalysisxBuiltEnvironment",
+      },
+    },
   ],
 } as const;
