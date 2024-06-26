@@ -28,7 +28,7 @@ export const RESUME_DATA = {
   summary: "Building data-intensive applications.",
   avatarUrl:
     "https://media.licdn.com/dms/image/D5603AQGlrcgLcX9Vpg/profile-displayphoto-shrink_400_400/0/1707890520752?e=1724889600&v=beta&t=RjCGYxTR83gGclzGidRCi-K7Zp1cv1QjJPffvhkj1GQ",
-  personalWebsiteUrl: "www.roupenminassian.xyz",
+  personalWebsiteUrl: "https://www.roupenminassian.xyz/",
   contact: {
     email: "roupenm@me.com",
     tel: "+61 0404 061 884",
