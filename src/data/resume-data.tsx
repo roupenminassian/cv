@@ -61,7 +61,7 @@ export const RESUME_DATA = {
       badges: ["In Office"],
       title: "MLOps Engineer",
       logo: ParabolLogo,
-      start: "July 2024",
+      start: "2024",
       end: "Current",
       description:
         "Overseeing the complete lifecycle of LLM agents in insurance, from design and prototyping to deployment.",
@@ -72,8 +72,8 @@ export const RESUME_DATA = {
       badges: ["Remote"],
       title: "Machine Learning Engineer",
       logo: ParabolLogo,
-      start: "November 2021",
-      end: "June 2024",
+      start: "2021",
+      end: "2024",
       description:
         "Led the end-to-end design, prototyping, and development of a conversational AI agents.",
     },
@@ -83,8 +83,8 @@ export const RESUME_DATA = {
       badges: ["Remote"],
       title: "Machine Learning Researcher",
       logo: ParabolLogo,
-      start: "October 2021",
-      end: "Current",
+      start: "2021",
+      end: "2024",
       description:
         "Conducted research in NLP, computer vision, and timeseries fields.",
     },
@@ -102,7 +102,7 @@ export const RESUME_DATA = {
     {
       company: "Westpac",
       link: "https://www.westpac.com.au/",
-      badges: [],
+      badges: ["In Office"],
       title: "Operations Associate",
       logo: ParabolLogo,
       start: "2020",
