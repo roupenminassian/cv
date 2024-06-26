@@ -64,7 +64,7 @@ export const RESUME_DATA = {
       start: "2024",
       end: "Current",
       description:
-        "Overseeing the complete lifecycle of LLM agents in insurance, from design and prototyping to deployment.",
+        "Overseeing the complete lifecycle of LLM agents, from design and prototyping to deployment.",
     },
     {
       company: "Fujitsu",
