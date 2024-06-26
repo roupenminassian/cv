@@ -27,8 +27,8 @@ export const RESUME_DATA = {
   about: "Data Scientist | Machine Learning Engineer",
   summary: "Building data-intensive applications.",
   avatarUrl:
-    "https://media.licdn.com/dms/image/D5603AQGlrcgLcX9Vpg/profile-displayphoto-shrink_800_800/0/1707890520752?e=1713398400&v=beta&t=r4ZlOu-iCg120E_UkGktpNtKSwhW5-vXIviutNNv_gg",
-  personalWebsiteUrl: "https://jarocki.me",
+    "https://media.licdn.com/dms/image/D5603AQGlrcgLcX9Vpg/profile-displayphoto-shrink_400_400/0/1707890520752?e=1724889600&v=beta&t=RjCGYxTR83gGclzGidRCi-K7Zp1cv1QjJPffvhkj1GQ",
+  personalWebsiteUrl: "www.roupenminassian.xyz",
   contact: {
     email: "roupenm@me.com",
     tel: "+61 0404 061 884",
@@ -56,13 +56,24 @@ export const RESUME_DATA = {
   ],
   work: [
     {
+      company: "Suncorp",
+      link: "https://www.suncorp.com.au/",
+      badges: ["In Office"],
+      title: "MLOps Engineer",
+      logo: ParabolLogo,
+      start: "July 2024",
+      end: "Current",
+      description:
+        "Overseeing the complete lifecycle of LLM agents in insurance, from design and prototyping to deployment.",
+    },
+    {
       company: "Fujitsu",
       link: "https://global.fujitsu/en-apac/",
       badges: ["Remote"],
       title: "Machine Learning Engineer",
       logo: ParabolLogo,
-      start: "2021",
-      end: "",
+      start: "November 2021",
+      end: "June 2024",
       description:
         "Led the end-to-end design, prototyping, and development of a conversational AI agents.",
     },
@@ -72,8 +83,8 @@ export const RESUME_DATA = {
       badges: ["Remote"],
       title: "Machine Learning Researcher",
       logo: ParabolLogo,
-      start: "2021",
-      end: "2023",
+      start: "October 2021",
+      end: "Current",
       description:
         "Conducted research in NLP, computer vision, and timeseries fields.",
     },
