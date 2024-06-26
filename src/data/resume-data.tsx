@@ -78,7 +78,7 @@ export const RESUME_DATA = {
         "Led the end-to-end design, prototyping, and development of a conversational AI agents.",
     },
     {
-      company: "Data Science Institute, UTS",
+      company: "UTS Data Science Institute",
       link: "https://www.uts.edu.au/data-science-institute",
       badges: ["Remote"],
       title: "Machine Learning Researcher",
