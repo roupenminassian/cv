@@ -58,7 +58,7 @@ export const RESUME_DATA = {
     {
       company: "Suncorp",
       link: "https://www.suncorp.com.au/",
-      badges: ["In Office"],
+      badges: ["In Office", "Remote"],
       title: "MLOps Engineer",
       logo: ParabolLogo,
       start: "2024",
