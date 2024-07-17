@@ -25,7 +25,7 @@ export const RESUME_DATA = {
   location: "Sydney, Australia",
   locationLink: "https://www.google.com/maps/place/sydney",
   about: "Data Scientist | Machine Learning Engineer",
-  summary: "Building data-intensive applications.",
+  summary: "Building data-intensive applications. Currently chasing the sun.",
   avatarUrl:
     "https://media.licdn.com/dms/image/D5603AQGlrcgLcX9Vpg/profile-displayphoto-shrink_400_400/0/1707890520752?e=1724889600&v=beta&t=RjCGYxTR83gGclzGidRCi-K7Zp1cv1QjJPffvhkj1GQ",
   personalWebsiteUrl: "https://www.roupenminassian.xyz/",
@@ -44,12 +44,6 @@ export const RESUME_DATA = {
     {
       school: "University of Sydney",
       degree: "Bachelor of Medical Science (Neuroscience + Physiology)",
-      start: "",
-      end: "",
-    },
-    {
-      school: "University of New South Wales",
-      degree: "Master of Information Technology (Artificial Intelligence)",
       start: "",
       end: "",
     },
