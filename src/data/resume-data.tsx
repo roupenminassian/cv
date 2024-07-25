@@ -38,6 +38,11 @@ export const RESUME_DATA = {
         url: "https://www.linkedin.com/in/roupenminassian/",
         icon: LinkedInIcon,
       },
+      {
+        name: "GitHub",
+        url: "https://github.com/roupenminassian",
+        icon: GitHubIcon,
+      },
     ],
   },
   education: [
