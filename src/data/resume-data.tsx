@@ -18,6 +18,7 @@ import {
   YearProgressLogo,
 } from "@/images/logos";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import { getAllPosts } from "@/lib/blog";
 
 export const RESUME_DATA = {
   name: "Roupen Minassian",
@@ -193,4 +194,11 @@ export const RESUME_DATA = {
       },
     },
   ],
+  blogPosts: getAllPosts().map((post) => ({
+    title: post.title,
+    date: post.date,
+    summary: post.summary,
+    tags: post.tags,
+    link: `/blog/${post.slug}`,
+  })),
 } as const;
