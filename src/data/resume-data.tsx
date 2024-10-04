@@ -28,7 +28,7 @@ export const RESUME_DATA = {
   about: "Data Scientist | Machine Learning Engineer",
   summary: "Building data-intensive applications. Currently chasing the sun.",
   avatarUrl:
-    "https://media.licdn.com/dms/image/D5603AQGlrcgLcX9Vpg/profile-displayphoto-shrink_400_400/0/1707890520752?e=1724889600&v=beta&t=RjCGYxTR83gGclzGidRCi-K7Zp1cv1QjJPffvhkj1GQ",
+    "https://media.licdn.com/dms/image/v2/D5603AQGlrcgLcX9Vpg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1707890520752?e=1733356800&v=beta&t=Mplvwr4B8WsAugpG59ooQXbPCrr60hyDsLCKhw5sZr8",
   personalWebsiteUrl: "https://www.roupenminassian.xyz/",
   contact: {
     email: "roupenm@me.com",
