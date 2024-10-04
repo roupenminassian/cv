@@ -125,14 +125,14 @@ export const RESUME_DATA = {
   ],
   projects: [
     {
-      title: "LLMxTwitter",
+      title: "karabakhNLP",
       techStack: ["Redis", "Javascript", "Next.js", "Vercel", "D3.js"],
       description:
         "An interactive data visualisation exploring malicious behaviour on Twitter.",
       logo: ConsultlyLogo,
       link: {
-        label: "ll-mx-twitterx-visualisation.com",
-        href: "https://ll-mx-twitterx-visualisation.vercel.app/",
+        label: "https://www.karabakhnlp.com/",
+        href: "https://https://www.karabakhnlp.com/",
       },
     },
     {
