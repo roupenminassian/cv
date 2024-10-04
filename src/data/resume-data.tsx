@@ -132,8 +132,8 @@ export const RESUME_DATA = {
         "An interactive data visualisation exploring malicious behaviour on Twitter.",
       logo: ConsultlyLogo,
       link: {
-        label: "https://www.karabakhnlp.com/",
-        href: "https://https://www.karabakhnlp.com/",
+        label: "www.karabakhnlp.com/",
+        href: "https://www.karabakhnlp.com/",
       },
     },
     {
