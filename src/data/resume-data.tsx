@@ -112,7 +112,8 @@ export const RESUME_DATA = {
     },
   ],
   skills: [
-    "Microsoft Azure",
+    "Databricks",
+    "Hugging Face",
     "SQL",
     "Python",
     "JavaScript",
