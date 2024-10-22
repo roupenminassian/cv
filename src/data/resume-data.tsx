@@ -59,7 +59,7 @@ export const RESUME_DATA = {
       company: "Suncorp",
       link: "https://www.suncorp.com.au/",
       badges: ["In Office", "Remote"],
-      title: "MLOps Engineer",
+      title: "Data Scientist - Generative AI",
       logo: ParabolLogo,
       start: "2024",
       end: "Current",
@@ -70,10 +70,21 @@ export const RESUME_DATA = {
       company: "Fujitsu",
       link: "https://global.fujitsu/en-apac/",
       badges: ["Remote"],
+      title: "AI Consultant",
+      logo: ParabolLogo,
+      start: "2022",
+      end: "2024",
+      description:
+        "Development of AI Agents, and AI Ethics guidelines in Law and Health sectors.",
+    },
+    {
+      company: "Fujitsu",
+      link: "https://global.fujitsu/en-apac/",
+      badges: ["Remote"],
       title: "Machine Learning Engineer",
       logo: ParabolLogo,
       start: "2021",
-      end: "2024",
+      end: "2022",
       description:
         "Led the end-to-end design, prototyping, and development of a conversational AI agents.",
     },
@@ -87,17 +98,6 @@ export const RESUME_DATA = {
       end: "2024",
       description:
         "Conducted research in NLP, computer vision, and timeseries fields.",
-    },
-    {
-      company: "DataPoint Armenia",
-      link: "https://datapoint.am/",
-      badges: ["Remote"],
-      title: "Data Scientist",
-      logo: ParabolLogo,
-      start: "2020",
-      end: "2021",
-      description:
-        "Oversaw social media dataset quality control and analyzing metrics to identify suspicious activities, aiding Twitter in misinformation strategy.",
     },
     {
       company: "Westpac",
@@ -126,6 +126,16 @@ export const RESUME_DATA = {
   ],
   projects: [
     {
+      title: "Ella.io",
+      techStack: ["Groq", "Vercel", "Next.js", "Hugging Face"],
+      description: "SXSW Sydney 2024 Hackathon Winning Solution.",
+      logo: ConsultlyLogo,
+      link: {
+        label: "Ella.io",
+        href: "https://ellaio.vercel.app/",
+      },
+    },
+    {
       title: "karabakhNLP",
       techStack: ["Redis", "Javascript", "Next.js", "Vercel", "D3.js"],
       description:
@@ -134,16 +144,6 @@ export const RESUME_DATA = {
       link: {
         label: "www.karabakhnlp.com/",
         href: "https://www.karabakhnlp.com/",
-      },
-    },
-    {
-      title: "Dziv",
-      techStack: ["Scikit-Learn", "Python", "numpy", "pandas", "NLTK", "spaCy"],
-      description: "A comprehensive review on astroturfing on Twitter.",
-      logo: ConsultlyLogo,
-      link: {
-        label: "datapoint.am/dziv/",
-        href: "https://datapoint.am/dziv/",
       },
     },
     {
