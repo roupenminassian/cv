@@ -11,12 +11,14 @@ To this day, I still ponder whether how we approached community outreach then wa
 
 Since then, as the landscape of natural language processing had changed drastically, I felt it was an appropriate time to revisit this problem space. Understanding language, especially in politically-charged social media campaigns, has become critical in the advent of extremist cultural movements. Approaches to unravel language and meaning in recent years has erupted into popularity with AI models like ChatGPT, and a plethora of [open-source transformers](https://huggingface.co/), that has allowed many machine learning hobbyists and practicioners alike to apply a gamut of interpretation to their data.
 
+![karabakhNLP | karabakhNLP loading screen | 1200 | 800](/images/2.gif)
+
 In response to these advancements, I present [karabakhNLP](https://www.karabakhnlp.com/) as an attempt to more intuitively represent tweet behaviours during the Nagorno-Karabakh conflict of 2020. On reflecting how this has been previously documented, karabakhNLP is an interactive data visualisation that considers UI/UX principles to guide the audience in navigating the sample of ~30,000 sample tweets within one view.
 
-![karabakhNLP | Timeseries brush used to filter creation dates of social media posts | 1200 | 800](/images/3.gif)
+![karabakhNLP | Timeseries Brush used to filter creation dates of social media posts | 1200 | 800](/images/1.gif)
 
 Many techniques were used in order to present this information effectively, such as transformer embeddings and text classification. It became clear to me during this process of design and implementation that making data more ingestible to a wider array of audience members incentivises conversation and discussion. I encourage anyone to visit this web application on their desktop for the best experience and hope that it provides richer story-telling.
 
-![karabakhNLP | Responsive date range widget to display active ranges | 1200 | 800](/images/4.gif)
+![karabakhNLP | Responsive keyword search filtering tools | 1200 | 800](/images/3.gif)
 
 If you have any issues or suggestions, please feel free to reach out to me through any of my available contact methods.
