@@ -136,6 +136,16 @@ export const RESUME_DATA = {
       },
     },
     {
+      title: "HASS-DSI",
+      techStack: ["Tensorflow", "WandB", "Shapley"],
+      description: "A framework for experimenting and testing deep-learning timeseries models.",
+      logo: ConsultlyLogo,
+      link: {
+        label: "HASS-DSI",
+        href: "https://github.com/roupenminassian/DSI-DAB-smart-building-env-prediction/",
+      },
+    },
+    {
       title: "karabakhNLP",
       techStack: ["Redis", "Javascript", "Next.js", "Vercel", "D3.js"],
       description:
