@@ -212,4 +212,16 @@ export const RESUME_DATA = {
     tags: post.tags,
     link: `/blog/${post.slug}`,
   })),
+  publications: [
+    {
+      title: "Optimizing Indoor Environmental Prediction in Smart Buildings: A Comparative Analysis of Deep Learning Models",
+      authors: ["Minassian, R.", "Mihăiţă, A.S.", "Shirazi, A."],
+      venue: "international conference on Decarbonising the Building Industry (DBI)",
+      date: "2024-11-18",
+      type: "Conference" as const,
+      badges: ["Oral Presentation"],
+      description: "This study evaluates various deep learning architectures' effectiveness in predicting indoor environmental conditions within smart buildings, focusing on optimizing thermal comfort and energy efficiency through comparative model analysis.",
+      link: "https://rndbi.net/"
+    }
+  ] as const,
 } as const;

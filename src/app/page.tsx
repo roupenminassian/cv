@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
 import { BlogSection } from "@/components/BlogSection";
+import { ResearchSection } from "@/components/ResearchSection";
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
@@ -100,6 +101,7 @@ export default function Page() {
           </p>
         </Section>
         <BlogSection posts={RESUME_DATA.blogPosts} />
+        <ResearchSection publications={RESUME_DATA.publications} />
         <Section>
           <h2 className="text-xl font-bold">Work Experience</h2>
           {RESUME_DATA.work.map((work) => {
