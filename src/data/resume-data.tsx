@@ -220,7 +220,6 @@ export const RESUME_DATA = {
       date: "2024-11-18",
       type: "Conference" as const,
       badges: ["Oral Presentation"],
-      description: "This study evaluates various deep learning architectures' effectiveness in predicting indoor environmental conditions within smart buildings, focusing on optimizing thermal comfort and energy efficiency through comparative model analysis.",
       link: "https://rndbi.net/"
     }
   ] as const,
