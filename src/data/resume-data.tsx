@@ -142,7 +142,7 @@ export const RESUME_DATA = {
       logo: ConsultlyLogo,
       link: {
         label: "HASS-DSI",
-        href: "https://github.com/roupenminassian/DSI-DAB-smart-building-env-prediction/",
+        href: "https://github.com/Future-Mobility-Lab/DSI-DAB-smart-building-env-prediction",
       },
     },
     {
