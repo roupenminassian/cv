@@ -216,11 +216,11 @@ export const RESUME_DATA = {
     {
       title: "Optimizing Indoor Environmental Prediction in Smart Buildings: A Comparative Analysis of Deep Learning Models",
       authors: ["Minassian, R.", "Mihăiţă, A.S.", "Shirazi, A."],
-      venue: "international conference on Decarbonising the Building Industry (DBI)",
-      date: "2024-11-18",
-      type: "Conference" as const,
-      badges: ["Oral Presentation"],
-      link: "https://rndbi.net/"
+      venue: "Energy and Buildings",
+      date: "2024-11-22",
+      type: "Journal" as const,
+      badges: ["Oral Presentation", "Deep Learning", "Shapley"],
+      link: "https://doi.org/10.1016/j.enbuild.2024.115086"
     }
   ] as const,
 } as const;
