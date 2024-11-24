@@ -126,6 +126,16 @@ export const RESUME_DATA = {
   ],
   projects: [
     {
+      title: "Twitter Misinformation",
+      techStack: ["Hugging Face"],
+      description: "Built for academic research, this dataset enables studying information spread patterns and developing automated fact-checking systems.",
+      logo: ConsultlyLogo,
+      link: {
+        label: "twitter-misinformation",
+        href: "https://huggingface.co/datasets/roupenminassian/twitter-misinformation",
+      },
+    },
+    {
       title: "Ella.io",
       techStack: ["Groq", "Vercel", "Next.js", "Hugging Face"],
       description: "SXSW Sydney 2024 Hackathon Winning Solution.",
