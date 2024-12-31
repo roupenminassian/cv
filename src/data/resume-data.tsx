@@ -28,7 +28,7 @@ export const RESUME_DATA = {
   about: "Data Scientist / Machine Learning Engineer",
   summary: "Building data-intensive applications. Currently chasing the sun.",
   avatarUrl:
-    "https://media.licdn.com/dms/image/v2/D5603AQGlrcgLcX9Vpg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1707890520752?e=1733356800&v=beta&t=Mplvwr4B8WsAugpG59ooQXbPCrr60hyDsLCKhw5sZr8",
+    "https://media.licdn.com/dms/image/v2/D5603AQGlrcgLcX9Vpg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1707890520752?e=1741219200&v=beta&t=aWfNv_o1-VEfDHIlPPQoFzrjin5NgAsMweyGidDb2Ao",
   personalWebsiteUrl: "https://www.roupenminassian.xyz/",
   contact: {
     email: "roupenm@me.com",
@@ -70,21 +70,10 @@ export const RESUME_DATA = {
       company: "Fujitsu",
       link: "https://global.fujitsu/en-apac/",
       badges: ["Remote"],
-      title: "AI Consultant",
-      logo: ParabolLogo,
-      start: "2022",
-      end: "2024",
-      description:
-        "Development of AI Agents, and AI Ethics guidelines in Law and Health sectors.",
-    },
-    {
-      company: "Fujitsu",
-      link: "https://global.fujitsu/en-apac/",
-      badges: ["Remote"],
       title: "Machine Learning Engineer",
       logo: ParabolLogo,
       start: "2021",
-      end: "2022",
+      end: "2024",
       description:
         "Led the end-to-end design, prototyping, and development of a conversational AI agents.",
     },
