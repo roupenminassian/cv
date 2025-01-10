@@ -27,8 +27,7 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/sydney",
   about: "Data Scientist / Machine Learning Engineer",
   summary: "Building data-intensive applications. Currently chasing the sun.",
-  avatarUrl:
-    "https://media.licdn.com/dms/image/v2/D5603AQGlrcgLcX9Vpg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1707890520752?e=1741219200&v=beta&t=aWfNv_o1-VEfDHIlPPQoFzrjin5NgAsMweyGidDb2Ao",
+  avatarUrl: "/images/notion-face.png",
   personalWebsiteUrl: "https://www.roupenminassian.xyz/",
   contact: {
     email: "roupenm@me.com",
