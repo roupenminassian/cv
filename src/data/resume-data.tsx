@@ -203,13 +203,15 @@ export const RESUME_DATA = {
       },
     },
   ],
-  blogPosts: getAllPosts().map((post) => ({
-    title: post.title,
-    date: post.date,
-    summary: post.summary,
-    tags: post.tags,
-    link: `/blog/${post.slug}`,
-  })),
+  blogPosts: getAllPosts()
+    .filter(post => post.title && post.date && post.summary)
+    .map((post) => ({
+      title: post.title,
+      date: post.date,
+      summary: post.summary,
+      tags: post.tags || [],
+      link: `/blog/${post.slug}`,
+    })),
   publications: [
     {
       title: "Optimizing Indoor Environmental Prediction in Smart Buildings: A Comparative Analysis of Deep Learning Models",

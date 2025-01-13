@@ -37,7 +37,8 @@ const BlogPostCard: React.FC<BlogPost> = ({
             href={link}
             className="inline-flex items-center gap-1 hover:underline"
           >
-            {title} <span className="size-1 rounded-full bg-green-500"></span>
+            {title}
+            <span className="inline-block h-1 w-1 rounded-full bg-green-500"></span>
           </Link>
         </CardTitle>
         <div className="hidden font-mono text-xs underline print:visible">
@@ -65,6 +66,8 @@ const BlogPostCard: React.FC<BlogPost> = ({
 );
 
 export const BlogSection: React.FC<BlogSectionProps> = ({ posts }) => {
+  if (posts.length === 0) return null;
+  
   return (
     <Section>
       <h2 className="text-xl font-bold">Blog Posts</h2>

@@ -22,13 +22,26 @@ export function getAllPosts(): BlogPost[] {
     const fileContents = fs.readFileSync(fullPath, "utf8");
     const { data, content } = matter(fileContents);
 
+    // Remove quotes from the date string if they exist
+    const dateStr = data.date?.replace(/"/g, '') || '';
+    
+    let formattedDate = '';
+    try {
+      if (dateStr) {
+        formattedDate = format(parseISO(dateStr), "yyyy-MM-dd");
+      }
+    } catch (error) {
+      console.error(`Error parsing date for ${fileName}:`, error);
+      formattedDate = dateStr; // Fallback to original date string
+    }
+
     return {
       slug,
-      title: data.title,
-      date: format(parseISO(data.date), "yyyy-MM-dd"),
-      summary: data.summary,
-      tags: data.tags,
-      content,
+      title: data.title || '',
+      date: formattedDate,
+      summary: data.summary || '',
+      tags: data.tags || [],
+      content: content || '',
     };
   });
 
