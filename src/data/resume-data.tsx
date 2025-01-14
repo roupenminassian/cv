@@ -28,7 +28,7 @@ export const RESUME_DATA = {
   about: "Data Scientist / Machine Learning Engineer",
   summary: "From studying neural systems to building data-intensive AI solutions. Working across medicine, insurance, and digital environments, grateful for each opportunity to solve meaningful problems.",
   avatarUrl: "/images/notion-face.png",
-  personalWebsiteUrl: "https://www.roupenminassian.xyz/",
+  personalWebsiteUrl: "https://www.roupenminassian.com/",
   contact: {
     email: "roupenm@me.com",
     tel: "+61 0404 061 884",
