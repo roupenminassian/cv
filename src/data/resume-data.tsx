@@ -55,6 +55,28 @@ export const RESUME_DATA = {
   ],
   work: [
     {
+      company: "Sixth Digit",
+      link: "https://www.sixthdigit.dev/",
+      badges: ["In Office", "Remote"],
+      title: "Co-founder",
+      logo: ParabolLogo,
+      start: "2024",
+      end: "Current",
+      description:
+        "AI agent consultancy.",
+    },
+    {
+      company: "Vern",
+      link: "https://www.vern.so/",
+      badges: ["In Office", "Remote"],
+      title: "Co-founder",
+      logo: ParabolLogo,
+      start: "2024",
+      end: "Current",
+      description:
+        "AI browser agents to test real user scenarios and evaluation flows against best practices.",
+    },
+    {
       company: "Suncorp",
       link: "https://www.suncorp.com.au/",
       badges: ["In Office", "Remote"],
