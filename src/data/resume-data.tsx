@@ -58,7 +58,7 @@ export const RESUME_DATA = {
       company: "Sixth Digit",
       link: "https://www.sixthdigit.dev/",
       badges: ["In Office", "Remote"],
-      title: "Co-founder",
+      title: "ML Specialist",
       logo: ParabolLogo,
       start: "2024",
       end: "Current",
