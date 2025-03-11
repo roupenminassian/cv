@@ -243,6 +243,24 @@ export const RESUME_DATA = {
       type: "Journal" as const,
       badges: ["Oral Presentation", "Deep Learning", "Shapley"],
       link: "https://doi.org/10.1016/j.enbuild.2024.115086"
+    },
+    {
+      title: "A Scalable AI Framework for Proactive Health Monitoring Using Physiological Signals",
+      authors: ["Radhakrishnan, M.", "Minassian, R.", "Yu, K.", "Berry, A."],
+      venue: "IEEE",
+      date: "2025-03-17",
+      type: "Journal" as const,
+      badges: ["Sepsis", "Human-Centered"],
+      link: "https://sites.google.com/view/hccs25/accepted-papers?authuser=0"
+    },
+    {
+      title: "Time-Series BERT for Sepsis Detection: Uncovering Patient Trajectories through Vital Sign Embeddings ",
+      authors: ["Minassian, R.", "Radhakrishnan, M.", "Yu, K."],
+      venue: "IEEE",
+      date: "2025-08-09",
+      type: "Journal" as const,
+      badges: ["BERT", "Sepsis", "Human-Centered"],
+      link: "https://medinfo2025.org"
     }
   ] as const,
 } as const;
