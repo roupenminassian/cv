@@ -110,15 +110,15 @@ export const RESUME_DATA = {
         "Conducted research in NLP, computer vision, and timeseries fields.",
     },
     {
-      company: "Westpac",
-      link: "https://www.westpac.com.au/",
-      badges: ["In Office"],
-      title: "Operations Associate",
+      company: "Datapoint Armenia",
+      link: "https://datapointlab.org/",
+      badges: ["Remote"],
+      title: "Data Consultant",
       logo: ParabolLogo,
       start: "2020",
       end: "2021",
       description:
-        "Managed system operations, ensuring robust maintenance, configuration, and content management within Westpac",
+        "Led misinformation marketing investigation with Twitter executives and Berkeley/Harvard researchers.",
     },
   ],
   skills: [
