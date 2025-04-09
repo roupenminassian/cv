@@ -19,6 +19,7 @@ import {
 } from "@/images/logos";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 import { getAllPosts } from "@/lib/blog";
+import { CalendarIcon } from "lucide-react";
 
 export const RESUME_DATA = {
   name: "Roupen Minassian",
@@ -42,6 +43,11 @@ export const RESUME_DATA = {
         name: "GitHub",
         url: "https://github.com/roupenminassian",
         icon: GitHubIcon,
+      },
+      {
+        name: "Calendar",
+        url: "https://cal.com/roupen-minassian/15min",
+        icon: CalendarIcon,
       },
     ],
   },
