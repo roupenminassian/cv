@@ -1,7 +1,6 @@
 import React from "react";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getAllPosts, getPostBySlug } from "@/lib/blog";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -11,8 +10,7 @@ import { ArrowLeft } from "lucide-react";
 import { Metadata } from "next";
 import { CaptionedImage } from "@/components/CaptionedImage";
 import "./styles.css";
-
-// Rest of the file remains the same...
+import { getAllPosts, getPostBySlug } from "@/lib/blog";
 
 export async function generateStaticParams() {
   const posts = getAllPosts();
@@ -27,15 +25,10 @@ export async function generateMetadata({
   params: { slug: string };
 }): Promise<Metadata> {
   const post = getPostBySlug(params.slug);
-
-  if (!post) {
-    return {
-      title: "Blog Post Not Found",
-    };
-  }
-
+  if (!post) return { title: "Blog Post Not Found" };
+  
   return {
-    title: `${post.title} | Roupen Minassian`,
+    title: post.title,
     description: post.summary,
   };
 }

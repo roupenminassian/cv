@@ -18,8 +18,8 @@ import {
   YearProgressLogo,
 } from "@/images/logos";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
-import { getAllPosts } from "@/lib/blog";
 import { CalendarIcon } from "lucide-react";
+import { getAllPosts } from "@/lib/blog";
 
 export const RESUME_DATA = {
   name: "Roupen Minassian",
@@ -27,7 +27,7 @@ export const RESUME_DATA = {
   location: "Sydney, Australia",
   locationLink: "https://www.google.com/maps/place/sydney",
   about: "Data Scientist / Machine Learning Engineer",
-  summary: "From studying neural systems to building data-intensive AI solutions. Working across medicine, insurance, and digital environments, grateful for each opportunity to solve meaningful problems.",
+  summary: "Data scientist and machine learning engineer specializing in AI solutions. Experienced in building LLM agents, NLP systems, and computer vision applications across healthcare, finance, and enterprise sectors.",
   avatarUrl: "/images/notion-face.png",
   personalWebsiteUrl: "https://www.roupenminassian.com/",
   contact: {
@@ -134,7 +134,7 @@ export const RESUME_DATA = {
     "Python",
     "JavaScript",
     "Machine Learning",
-    "Tensorflow",
+    "TensorFlow",
     "Computer Vision",
     "Redis",
     "Natural Language Processing (NLP)",
@@ -143,7 +143,7 @@ export const RESUME_DATA = {
   projects: [
     {
       title: "Twitter Misinformation",
-      techStack: ["Hugging Face"],
+      techStack: ["Hugging Face", "Python", "NLP", "PyTorch", "Transformers"],
       description: "Built for academic research, this dataset enables studying information spread patterns and developing automated fact-checking systems.",
       logo: ConsultlyLogo,
       link: {
@@ -153,7 +153,7 @@ export const RESUME_DATA = {
     },
     {
       title: "Ella.io",
-      techStack: ["Groq", "Vercel", "Next.js", "Hugging Face"],
+      techStack: ["Groq", "Vercel", "Next.js", "Hugging Face", "TypeScript", "TailwindCSS", "LangChain"],
       description: "SXSW Sydney 2024 Hackathon Winning Solution.",
       logo: ConsultlyLogo,
       link: {
@@ -163,7 +163,7 @@ export const RESUME_DATA = {
     },
     {
       title: "HASS-DSI",
-      techStack: ["Tensorflow", "WandB", "Shapley"],
+      techStack: ["TensorFlow", "Weights & Biases", "Shapley", "Python", "Pandas", "NumPy", "Matplotlib"],
       description: "A framework for experimenting and testing deep-learning timeseries models.",
       logo: ConsultlyLogo,
       link: {
@@ -173,9 +173,9 @@ export const RESUME_DATA = {
     },
     {
       title: "karabakhNLP",
-      techStack: ["Redis", "Javascript", "Next.js", "Vercel", "D3.js"],
+      techStack: ["Redis", "JavaScript", "Next.js", "Vercel", "D3.js", "TailwindCSS", "React"],
       description:
-        "An interactive data visualisation exploring malicious behaviour on Twitter.",
+        "An interactive data visualization exploring malicious behavior on Twitter.",
       logo: ConsultlyLogo,
       link: {
         label: "www.karabakhnlp.com/",
@@ -184,7 +184,7 @@ export const RESUME_DATA = {
     },
     {
       title: "CRC-P",
-      techStack: ["Scikit-Learn", "Python", "numpy", "pandas", "XGBoost"],
+      techStack: ["Scikit-Learn", "Python", "NumPy", "Pandas", "XGBoost", "Matplotlib", "Seaborn"],
       description: "Human activity classification using wearable sensor data.",
       logo: ConsultlyLogo,
       link: {
@@ -197,14 +197,15 @@ export const RESUME_DATA = {
       techStack: [
         "Scikit-Learn",
         "Python",
-        "numpy",
-        "pandas",
+        "NumPy",
+        "Pandas",
         "OpenCV",
         "Hugging Face",
         "Transformers",
         "PyTorch",
+        "Computer Vision"
       ],
-      description: "Tool for analysing traffic from footage.",
+      description: "Tool for analyzing traffic from footage.",
       logo: ConsultlyLogo,
       link: {
         label: "github.com/roupenminassian/Traffic-AnalysisxBuiltEnvironment",
@@ -216,13 +217,15 @@ export const RESUME_DATA = {
       techStack: [
         "Scikit-Learn",
         "Python",
-        "numpy",
-        "pandas",
-        "GPT3",
+        "NumPy",
+        "Pandas",
+        "GPT-3",
         "BERT",
         "Transformers",
+        "NLP",
+        "Hugging Face"
       ],
-      description: "Utilising NLP to improve document search.",
+      description: "Utilizing NLP to improve document search.",
       logo: ConsultlyLogo,
       link: {
         label:
@@ -231,15 +234,13 @@ export const RESUME_DATA = {
       },
     },
   ],
-  blogPosts: getAllPosts()
-    .filter(post => post.title && post.date && post.summary)
-    .map((post) => ({
-      title: post.title,
-      date: post.date,
-      summary: post.summary,
-      tags: post.tags || [],
-      link: `/blog/${post.slug}`,
-    })),
+  blogPosts: getAllPosts().map((post) => ({
+    title: post.title,
+    date: post.date,
+    summary: post.summary,
+    tags: post.tags,
+    link: `/blog/${post.slug}`,
+  })),
   publications: [
     {
       title: "Optimizing Indoor Environmental Prediction in Smart Buildings: A Comparative Analysis of Deep Learning Models",
