@@ -258,7 +258,7 @@ export const RESUME_DATA = {
       date: "2025-03-17",
       type: "Journal" as const,
       badges: ["Sepsis", "Human-Centered"],
-      link: "https://sites.google.com/view/hccs25/accepted-papers?authuser=0"
+      link: "https://www.computer.org/csdl/proceedings-article/percom-workshops/2025/355300a207/27FQLRybpfi"
     },
     {
       title: "Time-Series BERT for Sepsis Detection: Uncovering Patient Trajectories through Vital Sign Embeddings ",
