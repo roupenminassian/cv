@@ -100,7 +100,7 @@ export const RESUME_DATA = {
       title: "Machine Learning Researcher",
       logo: ParabolLogo,
       start: "Oct 2021",
-      end: "Jul 2024",
+      end: "Jun 2024",
       description:
         "Conducted research in NLP, computer vision, and timeseries fields.",
     },
