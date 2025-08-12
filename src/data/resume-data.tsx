@@ -27,7 +27,7 @@ export const RESUME_DATA = {
   location: "Sydney, Australia",
   locationLink: "https://www.google.com/maps/place/sydney",
   about: "Data Scientist / Machine Learning Engineer",
-  summary: "Data scientist and machine learning engineer specializing in AI solutions. Experienced in building LLM agents, NLP systems, and computer vision applications across healthcare, finance, and enterprise sectors.",
+  summary: "Data specialist with a passion for building. Experienced in LLM agents, NLP systems, and time-series applications across healthcare, finance, and enterprise sectors.",
   avatarUrl: "/images/notion-face.png",
   personalWebsiteUrl: "https://www.roupenminassian.com/",
   contact: {
@@ -60,6 +60,17 @@ export const RESUME_DATA = {
     },
   ],
   work: [
+    {
+      company: "Vern",
+      link: "https://www.vern.so/",
+      badges: ["In Office","Remote"],
+      title: "CTO",
+      logo: ParabolLogo,
+      start: "Feb 2025",
+      end: "Present",
+      description:
+        "Building the future of AI Agents for startups.",
+    },
     {
       company: "Suncorp Group",
       link: "https://www.suncorp.com.au/",
