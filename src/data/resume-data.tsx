@@ -256,7 +256,7 @@ export const RESUME_DATA = {
       date: "2025-08-09",
       type: "Journal" as const,
       badges: ["BERT", "Sepsis", "Human-Centered"],
-      link: "https://medinfo2025.org"
+      link: "https://ebooks.iospress.nl/doi/10.3233/SHTI250956"
     }
   ] as const,
 } as const;
