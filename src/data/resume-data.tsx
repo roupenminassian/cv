@@ -237,7 +237,7 @@ export const RESUME_DATA = {
       venue: "Energy and Buildings",
       date: "2024-11-22",
       type: "Journal" as const,
-      badges: ["Oral Presentation", "Deep Learning", "Shapley"],
+      badges: ["CNN", "LSTM", "Deep Learning", "Shapley"],
       link: "https://doi.org/10.1016/j.enbuild.2024.115086"
     },
     {
@@ -246,7 +246,7 @@ export const RESUME_DATA = {
       venue: "IEEE",
       date: "2025-03-17",
       type: "Journal" as const,
-      badges: ["Sepsis", "Human-Centered"],
+      badges: ["Sepsis", "Human-Centered Interaction"],
       link: "https://www.computer.org/csdl/proceedings-article/percom-workshops/2025/355300a207/27FQLRybpfi"
     },
     {
@@ -255,7 +255,7 @@ export const RESUME_DATA = {
       venue: "IEEE",
       date: "2025-08-09",
       type: "Journal" as const,
-      badges: ["BERT", "Sepsis", "Human-Centered"],
+      badges: ["BERT", "Sepsis", "Interpretability"],
       link: "https://ebooks.iospress.nl/doi/10.3233/SHTI250956"
     }
   ] as const,
