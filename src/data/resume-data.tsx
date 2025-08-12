@@ -78,7 +78,7 @@ export const RESUME_DATA = {
       title: "MLOps Engineer - Gen AI",
       logo: ParabolLogo,
       start: "Jul 2024",
-      end: "Present",
+      end: "Jul 2025",
       description:
         "Build and deploy machine learning models and AI systems at scale.",
     },
