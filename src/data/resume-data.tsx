@@ -26,8 +26,8 @@ export const RESUME_DATA = {
   initials: "RM",
   location: "Sydney, Australia",
   locationLink: "https://www.google.com/maps/place/sydney",
-  about: "Data Scientist / Machine Learning Engineer",
-  summary: "Data specialist with a passion for building. Experienced in LLM agents, NLP systems, and time-series applications across healthcare, finance, and enterprise sectors.",
+  about: "Data Specialist",
+  summary: "Experienced in LLM agents, NLP systems, and time-series applications across healthcare, finance, and enterprise sectors.",
   avatarUrl: "/images/notion-face.png",
   personalWebsiteUrl: "https://www.roupenminassian.com/",
   contact: {
