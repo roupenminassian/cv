@@ -19,7 +19,6 @@ import {
 } from "@/images/logos";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 import { CalendarIcon } from "lucide-react";
-import { getAllPosts } from "@/lib/blog";
 
 export const RESUME_DATA = {
   name: "Roupen Minassian",
@@ -234,40 +233,4 @@ export const RESUME_DATA = {
       },
     },
   ],
-  blogPosts: getAllPosts().map((post) => ({
-    title: post.title,
-    date: post.date,
-    summary: post.summary,
-    tags: post.tags,
-    link: `/blog/${post.slug}`,
-  })),
-  publications: [
-    {
-      title: "Optimizing Indoor Environmental Prediction in Smart Buildings: A Comparative Analysis of Deep Learning Models",
-      authors: ["Minassian, R.", "Mihăiţă, A.S.", "Shirazi, A."],
-      venue: "Energy and Buildings",
-      date: "2024-11-22",
-      type: "Journal" as const,
-      badges: ["CNN", "LSTM", "Deep Learning", "Shapley"],
-      link: "https://doi.org/10.1016/j.enbuild.2024.115086"
-    },
-    {
-      title: "A Scalable AI Framework for Proactive Health Monitoring Using Physiological Signals",
-      authors: ["Radhakrishnan, M.", "Minassian, R.", "Yu, K.", "Berry, A."],
-      venue: "IEEE",
-      date: "2025-03-17",
-      type: "Journal" as const,
-      badges: ["Sepsis", "Human-Centered Interaction"],
-      link: "https://www.computer.org/csdl/proceedings-article/percom-workshops/2025/355300a207/27FQLRybpfi"
-    },
-    {
-      title: "Time-Series BERT for Sepsis Detection: Uncovering Patient Trajectories through Vital Sign Embeddings ",
-      authors: ["Minassian, R.", "Radhakrishnan, M.", "Yu, K."],
-      venue: "IEEE",
-      date: "2025-08-09",
-      type: "Journal" as const,
-      badges: ["BERT", "Sepsis", "Interpretability"],
-      link: "https://ebooks.iospress.nl/doi/10.3233/SHTI250956"
-    }
-  ] as const,
 } as const;

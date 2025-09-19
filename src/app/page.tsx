@@ -35,41 +35,55 @@ export default function Page() {
             </p>
             <div className="flex gap-x-1 pt-1 font-mono text-sm text-muted-foreground print:hidden">
               {RESUME_DATA.contact.email ? (
-                <Button
-                  className="size-8"
-                  variant="outline"
-                  size="icon"
-                  asChild
-                >
-                  <a href={`mailto:${RESUME_DATA.contact.email}`}>
-                    <MailIcon className="size-4" />
-                  </a>
-                </Button>
+                <div className="group relative">
+                  <Button
+                    className="size-8 hover:w-auto hover:px-3 transition-all duration-300 ease-in-out"
+                    variant="outline"
+                    size="icon"
+                    asChild
+                  >
+                    <a href={`mailto:${RESUME_DATA.contact.email}`}>
+                      <MailIcon className="size-4" />
+                    </a>
+                  </Button>
+                  <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-primary text-primary-foreground text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
+                    Email me
+                  </div>
+                </div>
               ) : null}
               {RESUME_DATA.contact.tel ? (
-                <Button
-                  className="size-8"
-                  variant="outline"
-                  size="icon"
-                  asChild
-                >
-                  <a href={`tel:${RESUME_DATA.contact.tel}`}>
-                    <PhoneIcon className="size-4" />
-                  </a>
-                </Button>
+                <div className="group relative">
+                  <Button
+                    className="size-8 hover:w-auto hover:px-3 transition-all duration-300 ease-in-out"
+                    variant="outline"
+                    size="icon"
+                    asChild
+                  >
+                    <a href={`tel:${RESUME_DATA.contact.tel}`}>
+                      <PhoneIcon className="size-4" />
+                    </a>
+                  </Button>
+                  <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-primary text-primary-foreground text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
+                    Call me
+                  </div>
+                </div>
               ) : null}
               {RESUME_DATA.contact.social.map((social) => (
-                <Button
-                  key={social.name}
-                  className="size-8"
-                  variant="outline"
-                  size="icon"
-                  asChild
-                >
-                  <a href={social.url}>
-                    <social.icon className="size-4" />
-                  </a>
-                </Button>
+                <div key={social.name} className="group relative">
+                  <Button
+                    className="size-8 hover:w-auto hover:px-3 transition-all duration-300 ease-in-out"
+                    variant="outline"
+                    size="icon"
+                    asChild
+                  >
+                    <a href={social.url}>
+                      <social.icon className="size-4" />
+                    </a>
+                  </Button>
+                  <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-primary text-primary-foreground text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
+                    {social.name}
+                  </div>
+                </div>
               ))}
             </div>
             <div className="hidden flex-col gap-x-1 font-mono text-sm text-muted-foreground print:flex">
@@ -94,7 +108,6 @@ export default function Page() {
 
         {/* About Section */}
         <Section className="space-y-3">
-          <h2 className="text-xl font-bold">About</h2>
           <p className="text-pretty font-mono text-sm text-muted-foreground">
             {RESUME_DATA.summary}
           </p>

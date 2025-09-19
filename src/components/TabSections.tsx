@@ -8,113 +8,12 @@ import { ProjectCard } from "@/components/project-card";
 import { RESUME_DATA } from "@/data/resume-data";
 import { cn } from "@/lib/utils";
 
-interface BlogPost {
-  title: string;
-  date: string;
-  summary: string;
-  tags: readonly string[];
-  link: string;
-}
-
-interface Publication {
-  title: string;
-  authors: readonly string[];
-  venue: string;
-  date: string;
-  type: "Journal" | "Conference";
-  link?: string;
-  badges?: readonly string[];
-}
-
 // Define project type to match the structure in resume-data
 type Project = typeof RESUME_DATA.projects[number];
 
-// Create a custom component for Blog Posts without a heading
-const BlogPostsContent: React.FC<{ posts: readonly BlogPost[] }> = ({ posts }) => {
-  if (posts.length === 0) return null;
-  
-  return (
-    <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
-      {posts.map((post, index) => (
-        <Card key={index} className="flex flex-col overflow-hidden border border-muted p-3">
-          <CardHeader className="">
-            <div className="space-y-1">
-              <h3 className="text-base font-semibold">
-                <a href={post.link} className="inline-flex items-center gap-1 hover:underline">
-                  {post.title}
-                  <span className="inline-block h-1 w-1 rounded-full bg-green-500"></span>
-                </a>
-              </h3>
-              <div className="font-mono text-xs text-muted-foreground">
-                {post.date} • {post.summary}
-              </div>
-            </div>
-          </CardHeader>
-          <CardContent className="mt-auto flex">
-            <div className="mt-2 flex flex-wrap gap-1">
-              {post.tags.map((tag) => (
-                <Badge
-                  className="px-1 py-0 text-[10px]"
-                  variant="secondary"
-                  key={tag}
-                >
-                  {tag}
-                </Badge>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
-      ))}
-    </div>
-  );
-};
-
-// Create a custom component for Research without a heading
-const ResearchContent: React.FC<{ publications: readonly Publication[] }> = ({ publications }) => {
-  return (
-    <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
-      {publications.map((publication, index) => (
-        <Card key={index} className="flex flex-col overflow-hidden border border-muted p-3">
-          <CardHeader className="">
-            <div className="space-y-1">
-              <h3 className="text-base font-semibold">
-                {publication.link ? (
-                  <a href={publication.link} className="inline-flex items-center gap-1 hover:underline">
-                    {publication.title} <span className="size-1 rounded-full bg-green-500"></span>
-                  </a>
-                ) : (
-                  publication.title
-                )}
-              </h3>
-              <div className="font-mono text-xs text-muted-foreground">
-                {publication.authors.join(", ")} • {publication.venue} • {publication.date}
-              </div>
-            </div>
-          </CardHeader>
-          <CardContent className="mt-auto flex">
-            <div className="mt-2 flex flex-wrap gap-1">
-              <Badge className="px-1 py-0 text-[10px]" variant="secondary" key={publication.type}>
-                {publication.type}
-              </Badge>
-              {publication.badges?.map((badge) => (
-                <Badge className="px-1 py-0 text-[10px]" variant="secondary" key={badge}>
-                  {badge}
-                </Badge>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
-      ))}
-    </div>
-  );
-};
-
 export const TabSections = () => {
-  const [activeTab, setActiveTab] = useState("Work Experience");
   const [selectedSkills, setSelectedSkills] = useState<string[]>([]);
   const [filteredProjects, setFilteredProjects] = useState<Project[]>([...RESUME_DATA.projects]);
-  
-  const tabs = ["Work Experience", "Blog", "R&D"];
   
   // Extract unique skills from projects
   const availableSkills = useMemo(() => {
@@ -154,63 +53,59 @@ export const TabSections = () => {
   };
   
   return (
-    <div className="space-y-6">
-      {/* Navigation Headings */}
-      <div className="flex gap-6 border-b pb-2">
-        {tabs.map((tab) => (
-          <h2 
-            key={tab}
-            onClick={() => setActiveTab(tab)}
-            className={cn(
-              "text-xl font-bold cursor-pointer transition-colors leading-7",
-              activeTab === tab
-                ? "text-foreground" 
-                : "text-muted-foreground hover:text-foreground"
-            )}
-          >
-            {tab}
-          </h2>
-        ))}
-      </div>
-      
-      {/* Content */}
-      {activeTab === "Work Experience" && (
-        <div className="space-y-8">
+    <div className="space-y-8">
           <Section>
-            <div className="space-y-4">
-              {RESUME_DATA.work.map((work) => (
-                <Card key={work.company}>
-                  <CardHeader>
-                    <div className="flex items-center justify-between gap-x-2 text-base">
-                      <h4 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
-                        <a className="hover:underline" href={work.link}>
-                          {work.company}
-                        </a>
-                        <span className="inline-flex gap-x-1">
-                          {work.badges.map((badge) => (
-                            <Badge
-                              variant="secondary"
-                              className="align-middle text-xs"
-                              key={badge}
-                            >
-                              {badge}
-                            </Badge>
-                          ))}
-                        </span>
-                      </h4>
-                      <div className="text-sm tabular-nums text-gray-500">
-                        {work.start} - {work.end}
+            <div className="relative">
+              {/* Timeline line */}
+              <div className="absolute left-4 top-0 bottom-0 w-px bg-border"></div>
+              
+              <div className="space-y-3">
+                {RESUME_DATA.work.map((work, index) => (
+                  <div key={work.company} className="relative flex items-start gap-4 group">
+                     {/* Timeline dot */}
+                     <div className="relative z-10 flex h-8 w-8 items-center justify-center">
+                       <div className={`h-3 w-3 rounded-full border-2 border-background shadow-sm transition-colors duration-300 ${
+                         work.end === "Present" 
+                           ? "bg-green-500" 
+                           : "bg-gray-400 group-hover:bg-black"
+                       }`}></div>
+                     </div>
+                     
+                     {/* Content */}
+                     <div className="flex-1 min-w-0">
+                       <div className="space-y-2 hover:bg-muted/30 rounded-lg px-0.5 py-0 hover:py-2 transition-all duration-300 ease-in-out cursor-pointer">
+                        <div className="flex items-center justify-between gap-x-2 text-base">
+                          <h4 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
+                            <a className="hover:underline" href={work.link}>
+                              {work.company}
+                            </a>
+                            <span className="inline-flex gap-x-1">
+                              {work.badges.map((badge) => (
+                                <Badge
+                                  variant="secondary"
+                                  className="align-middle text-xs"
+                                  key={badge}
+                                >
+                                  {badge}
+                                </Badge>
+                              ))}
+                            </span>
+                          </h4>
+                          <div className="text-sm tabular-nums text-gray-500">
+                            {work.start} - {work.end}
+                          </div>
+                        </div>
+                        <div className="font-mono text-sm leading-none">
+                          {work.title}
+                        </div>
+                        <div className="text-sm text-muted-foreground opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out max-h-0 group-hover:max-h-32 overflow-hidden">
+                          {work.description}
+                        </div>
                       </div>
                     </div>
-                    <div className="font-mono text-sm leading-none">
-                      {work.title}
-                    </div>
-                  </CardHeader>
-                  <CardContent className="mt-2 text-xs">
-                    {work.description}
-                  </CardContent>
-                </Card>
-              ))}
+                  </div>
+                ))}
+              </div>
             </div>
           </Section>
 
@@ -236,7 +131,7 @@ export const TabSections = () => {
           </Section>
 
           <Section>
-            <h3 className="text-lg font-bold">Technologies</h3>
+            <h3 className="text-lg font-bold">Tools and Skills</h3>
             <p className="text-sm text-muted-foreground mb-2">
               Click on skills to filter projects
             </p>
@@ -270,36 +165,47 @@ export const TabSections = () => {
                 </button>
               )}
             </div>
+            <div className="flex items-center gap-4 mb-4 text-xs text-muted-foreground">
+              <div className="flex items-center gap-1">
+                <div className="w-2 h-2 rounded-full bg-green-500"></div>
+                <span>Active project</span>
+              </div>
+              <div className="flex items-center gap-1">
+                <div className="w-2 h-2 rounded-full bg-amber-500"></div>
+                <span>Completed project</span>
+              </div>
+            </div>
             {filteredProjects.length === 0 ? (
               <p className="text-muted-foreground text-sm">No projects match the selected skills.</p>
             ) : (
-              <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
-                {filteredProjects.map((project) => (
-                  <ProjectCard
-                    key={project.title}
-                    title={project.title}
-                    description={project.description}
-                    tags={project.techStack}
-                    link={"link" in project ? project.link.href : undefined}
-                  />
-                ))}
+              <div className="flex flex-col md:flex-row gap-3 print:grid print:grid-cols-2 print:gap-2">
+                <div className="flex-1 space-y-3">
+                  {filteredProjects.filter((_, index) => index % 2 === 0).map((project) => (
+                    <ProjectCard
+                      key={project.title}
+                      title={project.title}
+                      description={project.description}
+                      tags={project.techStack}
+                      link={"link" in project ? project.link.href : undefined}
+                      isActive={project.title === "Twitter Misinformation" || project.title === "HASS-DSI"}
+                    />
+                  ))}
+                </div>
+                <div className="flex-1 space-y-3">
+                  {filteredProjects.filter((_, index) => index % 2 === 1).map((project) => (
+                    <ProjectCard
+                      key={project.title}
+                      title={project.title}
+                      description={project.description}
+                      tags={project.techStack}
+                      link={"link" in project ? project.link.href : undefined}
+                      isActive={project.title === "Twitter Misinformation" || project.title === "HASS-DSI"}
+                    />
+                  ))}
+                </div>
               </div>
             )}
           </Section>
-        </div>
-      )}
-
-      {activeTab === "Blog" && (
-        <div className="space-y-4">
-          <BlogPostsContent posts={RESUME_DATA.blogPosts} />
-        </div>
-      )}
-
-      {activeTab === "R&D" && (
-        <div className="space-y-4">
-          <ResearchContent publications={RESUME_DATA.publications} />
-        </div>
-      )}
     </div>
   );
 }; 
