@@ -74,7 +74,7 @@ export const TabSections = () => {
                      {/* Content */}
                      <div className="flex-1 min-w-0">
                        <div className="space-y-2 hover:bg-muted/30 rounded-lg px-0.5 py-0 hover:py-2 transition-all duration-300 ease-in-out cursor-pointer">
-                        <div className="flex items-center justify-between gap-x-2 text-base">
+                        <div className="flex items-center gap-x-2 text-base">
                           <h4 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
                             <a className="hover:underline" href={work.link}>
                               {work.company}
@@ -91,12 +91,12 @@ export const TabSections = () => {
                               ))}
                             </span>
                           </h4>
-                          <div className="text-sm tabular-nums text-gray-500">
-                            {work.start} - {work.end}
-                          </div>
                         </div>
                         <div className="font-mono text-sm leading-none">
                           {work.title}
+                        </div>
+                        <div className="text-sm text-muted-foreground opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out max-h-0 group-hover:max-h-8 overflow-hidden">
+                          <span className="tabular-nums">{work.start} - {work.end}</span>
                         </div>
                         <div className="text-sm text-muted-foreground opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out max-h-0 group-hover:max-h-32 overflow-hidden">
                           {work.description}
@@ -168,11 +168,11 @@ export const TabSections = () => {
             <div className="flex items-center gap-4 mb-4 text-xs text-muted-foreground">
               <div className="flex items-center gap-1">
                 <div className="w-2 h-2 rounded-full bg-green-500"></div>
-                <span>Active project</span>
+                <span>Active</span>
               </div>
               <div className="flex items-center gap-1">
                 <div className="w-2 h-2 rounded-full bg-amber-500"></div>
-                <span>Completed project</span>
+                <span>Complete</span>
               </div>
             </div>
             {filteredProjects.length === 0 ? (
