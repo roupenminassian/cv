@@ -14,6 +14,7 @@ type Project = typeof RESUME_DATA.projects[number];
 export const TabSections = () => {
   const [selectedSkills, setSelectedSkills] = useState<string[]>([]);
   const [filteredProjects, setFilteredProjects] = useState<Project[]>([...RESUME_DATA.projects]);
+  const [hoveredExperience, setHoveredExperience] = useState<string | null>(null);
   
   // Extract unique skills from projects
   const availableSkills = useMemo(() => {
@@ -60,8 +61,21 @@ export const TabSections = () => {
               <div className="absolute left-4 top-0 bottom-0 w-px bg-border"></div>
               
               <div className="space-y-3">
-                {RESUME_DATA.work.map((work, index) => (
-                  <div key={work.company} className="relative flex items-start gap-4 group">
+                {RESUME_DATA.work.map((work, index) => {
+                  const isHovered = hoveredExperience === work.company;
+                  const isAnyHovered = hoveredExperience !== null;
+                  const shouldGreyOut = isAnyHovered && !isHovered;
+                  
+                  return (
+                  <div 
+                    key={work.company} 
+                    className={cn(
+                      "relative flex items-start gap-4 group transition-opacity duration-300",
+                      shouldGreyOut ? "opacity-30" : "opacity-100"
+                    )}
+                    onMouseEnter={() => setHoveredExperience(work.company)}
+                    onMouseLeave={() => setHoveredExperience(null)}
+                  >
                      {/* Timeline dot */}
                      <div className="relative z-10 flex h-8 w-8 items-center justify-center">
                        <div className={`h-3 w-3 rounded-full border-2 border-background shadow-sm transition-colors duration-300 ${
@@ -104,7 +118,8 @@ export const TabSections = () => {
                       </div>
                     </div>
                   </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
           </Section>
