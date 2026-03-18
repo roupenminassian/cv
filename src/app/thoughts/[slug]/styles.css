@@ -1,0 +1,89 @@
+.prose {
+  max-width: 65ch;
+  color: #1a1a1a;
+  line-height: 1.75;
+  font-size: 0.875rem;
+}
+
+.prose :where(h1, h2, h3, h4) {
+  color: #1a1a1a;
+  font-weight: 700;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  line-height: 1.1;
+}
+
+.prose :where(h2) {
+  font-size: 1rem;
+}
+
+.prose :where(h3) {
+  font-size: 0.875rem;
+}
+
+.prose :where(p, ul, ol) {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+.prose :where(ul, ol) {
+  padding-left: 1.625em;
+}
+
+.prose :where(li) {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.prose :where(a) {
+  color: #1a1a1a;
+  text-decoration: underline;
+  text-decoration-color: #ccc;
+  text-underline-offset: 2px;
+}
+
+.prose :where(a:hover) {
+  text-decoration-color: #999;
+}
+
+.prose :where(blockquote) {
+  font-style: italic;
+  color: #666;
+  border-left: 2px solid #ddd;
+  margin-top: 1.6em;
+  margin-bottom: 1.6em;
+  padding-left: 1em;
+}
+
+.prose :where(code) {
+  color: #1a1a1a;
+  font-size: 0.875em;
+  background-color: #f0f0f0;
+  padding: 0.125em 0.25em;
+}
+
+.prose :where(pre) {
+  color: #1a1a1a;
+  background-color: #f0f0f0;
+  overflow-x: auto;
+  font-size: 0.875em;
+  line-height: 1.7;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  padding: 1em;
+}
+
+.prose :where(pre code) {
+  background-color: transparent;
+  padding: 0;
+}
+
+.prose figure {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.prose figure img {
+  margin-top: 0;
+  margin-bottom: 0;
+}
