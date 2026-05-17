@@ -31,7 +31,7 @@ export const NARRATIVE: Chapter[] = [
   {
     id: "intro",
     content: [
-      "Hey! I'm Roupen. I design intelligent systems - interfaces, architectures, and the seams in between.",
+      "Hey! I'm Roupen. I design intelligent systems; interfaces, architectures, and all the seams in between.",
     ],
   },
   {
@@ -39,7 +39,7 @@ export const NARRATIVE: Chapter[] = [
     content: [
       "It started with a passion for neuroscience at the ",
       link("University of Sydney", "https://www.sydney.edu.au/"),
-      " - learning about how information flows through the brain and the craft of thinking in systems.",
+      ", learning about how information flows through the brain and the craft of thinking in systems.",
     ],
   },
   {
