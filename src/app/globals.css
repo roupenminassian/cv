@@ -2,37 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
 body {
-  background-color: #fafafa;
-  color: #1a1a1a;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body {
   min-height: 100vh;
 }
 
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+@keyframes typewriter-blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
 }
 
-.cursor-blink::after {
-  content: "▏";
-  animation: blink 1s step-end infinite;
+.typewriter-cursor {
+  display: inline-block;
+  margin: 0 1px;
+  color: #000;
+  animation: typewriter-blink 1s step-end infinite;
 }
 
-.colon-blink {
-  animation: blink 1s step-end infinite;
+.scroll-char {
+  transition: opacity 120ms linear;
 }
 
 @media print {
   body {
     background-color: white;
+    color: black;
   }
 
-  .tree-content {
-    display: block !important;
-    max-height: none !important;
+  .scroll-char {
+    opacity: 1 !important;
   }
 
-  .no-print {
+  .typewriter-cursor {
     display: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .typewriter-cursor {
+    animation: none;
+  }
+
+  .scroll-char {
+    transition: none;
   }
 }

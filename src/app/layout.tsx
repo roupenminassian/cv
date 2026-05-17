@@ -7,7 +7,7 @@ import React from "react";
 
 export const metadata: Metadata = {
   title: "Roupen Minassian",
-  description: "Dreamer and Doer in one.",
+  description: "I design intelligent systems.",
 };
 
 const jetbrainsMono = JetBrains_Mono({
