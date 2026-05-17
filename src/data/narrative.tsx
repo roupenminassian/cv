@@ -50,7 +50,7 @@ export const NARRATIVE: Chapter[] = [
       link("Forbes", "https://www.forbes.com/sites/jackieabramian/2021/09/27/a-year-after-unleashing-war-crimes-against-indigenous-armenians-azerbaijans-threats-and-violations-continue/"),
       " wrote about our work, ",
       strike("Twitter"),
-      " and X updated its policies from our insights.",
+      " X updated its policies from our insights.",
     ],
   },
   {
