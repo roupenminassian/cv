@@ -31,7 +31,7 @@ export const NARRATIVE: Chapter[] = [
   {
     id: "intro",
     content: [
-      "Hey! I'm Roupen. I design intelligent systems — interfaces, architectures, and the seams between them.",
+      "Hey! I'm Roupen. I design intelligent systems — interfaces, architectures, and the seams in between.",
     ],
   },
   {
@@ -39,50 +39,49 @@ export const NARRATIVE: Chapter[] = [
     content: [
       "It started with neuroscience at the ",
       link("University of Sydney", "https://www.sydney.edu.au/"),
-      " — learning how information propagates through systems, and behaviour crafted across scales.",
+      " - learning about how information flows through the brain and thinking in systems.",
     ],
   },
   {
     id: "datapoint",
     content: [
       link("DataPoint Armenia", "https://www.datapoint.am/projects"),
-      " helped surface the same intuitions in a different domain: false narratives moving through social networks, who amplified them, and the structural signatures they left behind. ",
+      " threw me into data science as I built an intuition around natural language processing and information flows in online media: false narratives moving through social networks, and the signatures they leave behind. ",
       link("Forbes", "https://www.forbes.com/sites/jackieabramian/2021/09/27/a-year-after-unleashing-war-crimes-against-indigenous-armenians-azerbaijans-threats-and-violations-continue/"),
       " wrote about our work, ",
       strike("Twitter"),
-      " X updated its policies from our insights, and from there I was thrown into data science.",
+      " and X updated its policies from our insights.",
     ],
   },
   {
     id: "fujitsu",
     content: [
-      "At ",
       link("Fujitsu", "https://global.fujitsu/en-apac/"),
-      ", the medium became language. I built conversational agents for enterprise clients, with user intents surfacing from the bottom up, and fed back in as labels the agents could learn from. An early version of LLM guardrails.",
+      " helped me hone in on language models as I built conversational agents for enterprise clients - building feedback loops for improving intent recognition and designing conversations to extract details.",
     ],
   },
   {
     id: "uts",
     content: [
       link("University of Technology Sydney", "https://www.uts.edu.au/"),
-      " sat me across labs as the technical glue. Semantic search over legal corpora with ",
+      " sat me across labs as the technical glue. Semantic search over legal documents with ",
       link(
         "FASS",
         "https://www.uts.edu.au/about/faculty-arts-and-social-sciences",
       ),
-      " building early versions of retrieval augmented pipelines,",
-      " clustering timeseries usage patterns inside digital twin models with ",
+      " building early information retrieval systems,",
+      " clustering usage patterns inside digital twin models with ",
       link("DSI", "https://www.uts.edu.au/research/data-science-institute"),
       ", and digital health monitoring with the ",
       link("HCAI Lab", "https://www.uts.edu.au/research/human-centred-ai"),
-      " building explainable and interpretable interfaces."
+      " building explainable models and interpretable interfaces."
     ],
   },
   {
     id: "suncorp",
     content: [
       link("Suncorp", "https://www.suncorp.com.au/"),
-      " then pulled everything toward production and operations. ML out of notebooks and into a regulated enterprise — kill switches, rollback gates, the ability to pause, or unwind a deployed model the moment it drifted from what training had assumed. Alongside that, pipelines that aggregated unstructured data at scale — fragmented inputs reassembled into coherent records the business could act on.",
+      " then pulled everything toward operations. ML out of notebooks and into a regulated enterprise — kill switches, rollback gates, the ability unwind a deployed model the moment it drifted. Alongside that, I built pipelines that structured un-structured data at scale - fragmented inputs reassembled into coherent records the business could act on.",
     ],
   },
   {
@@ -90,7 +89,7 @@ export const NARRATIVE: Chapter[] = [
     content: [
       "Now as a co-founder at ",
       link("Vern", "https://www.vern.so/"),
-      ", agents do the document aggregation I used to hand-build, purpose-built for data migration during customer onboarding. The production instincts and the harness for keeping models honest sit underneath it.",
+      ", agents do document structuring I used to hand-build - purpose-built for data migration during customer onboarding. The production instincts and the agentic harness for keeping models accurate and reliable sit underneath it.",
     ],
   },
   {
