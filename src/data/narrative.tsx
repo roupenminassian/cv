@@ -58,7 +58,7 @@ export const NARRATIVE: Chapter[] = [
     id: "fujitsu",
     content: [
       link("Fujitsu", "https://global.fujitsu/en-apac/"),
-      " is where I dove deep on language models, building conversational agents for enterprise clients. I engineered feedback loops that sharpened intent recognition and designed dialogue flows that surfaced the right details from users. I left with a sharper sense of just how unpredictable these systems are beneath the surface, and a drive to build the layers that holds them accountable.",
+      " is where I dove deep on language models, building conversational agents for enterprise clients. I engineered feedback loops that sharpened intent recognition and designed dialogue flows that surfaced the right details from users. I left with a sharper sense of just how unpredictable these systems are beneath the surface, and a drive to build the layer that holds them accountable.",
     ],
   },
   {
