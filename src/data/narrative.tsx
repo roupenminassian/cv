@@ -31,7 +31,7 @@ export const NARRATIVE: Chapter[] = [
   {
     id: "intro",
     content: [
-      "Hey! I'm Roupen. I design intelligent systems — interfaces, architectures, and the seams in between.",
+      "Hey! I'm Roupen. I design intelligent systems - interfaces, architectures, and the seams in between.",
     ],
   },
   {
