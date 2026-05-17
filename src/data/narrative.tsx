@@ -39,14 +39,14 @@ export const NARRATIVE: Chapter[] = [
     content: [
       "It started with neuroscience at the ",
       link("University of Sydney", "https://www.sydney.edu.au/"),
-      " - learning about how information flows through the brain and thinking in systems.",
+      " - learning about how information flows through the brain and the craft of thinking in systems.",
     ],
   },
   {
     id: "datapoint",
     content: [
       link("DataPoint Armenia", "https://www.datapoint.am/projects"),
-      " threw me into data science as I built an intuition around natural language processing and information flows in online media: false narratives moving through social networks, and the signatures they leave behind. ",
+      " threw me into realm of data science. I developed a taste for NLP whilst interpreting information flows in online media - revealing the false narratives moving through social networks, and the signatures they leave behind. ",
       link("Forbes", "https://www.forbes.com/sites/jackieabramian/2021/09/27/a-year-after-unleashing-war-crimes-against-indigenous-armenians-azerbaijans-threats-and-violations-continue/"),
       " wrote about our work, ",
       strike("Twitter"),
@@ -57,31 +57,30 @@ export const NARRATIVE: Chapter[] = [
     id: "fujitsu",
     content: [
       link("Fujitsu", "https://global.fujitsu/en-apac/"),
-      " helped me hone in on language models as I built conversational agents for enterprise clients - building feedback loops for improving intent recognition and designing conversations to extract details.",
+      " is where I went deep on language models, building conversational agents for enterprise clients. I engineered feedback loops that sharpened intent recognition and designed dialogue flows that surfaced the right details from users.",
     ],
   },
   {
     id: "uts",
     content: [
-      link("University of Technology Sydney", "https://www.uts.edu.au/"),
-      " sat me across labs as the technical glue. Semantic search over legal documents with ",
+      link("UTS", "https://www.uts.edu.au/"),
+      " positioned me across labs as the technical glue. I designed semantic search over legal documents with ",
       link(
         "FASS",
         "https://www.uts.edu.au/about/faculty-arts-and-social-sciences",
       ),
-      " building early information retrieval systems,",
-      " clustering usage patterns inside digital twin models with ",
+      ", clustered usage patterns inside digital twin models with ",
       link("DSI", "https://www.uts.edu.au/research/data-science-institute"),
-      ", and digital health monitoring with the ",
+      "and built explainable models with interpretable interfaces at",
       link("HCAI Lab", "https://www.uts.edu.au/research/human-centred-ai"),
-      " building explainable models and interpretable interfaces."
+      "I learnt the importance of strategy and developed the agency to shape projects from problem to delivery."
     ],
   },
   {
     id: "suncorp",
     content: [
       link("Suncorp", "https://www.suncorp.com.au/"),
-      " then pulled everything toward operations. ML out of notebooks and into a regulated enterprise — kill switches, rollback gates, the ability unwind a deployed model the moment it drifted. Alongside that, I built pipelines that structured un-structured data at scale - fragmented inputs reassembled into coherent records the business could act on.",
+      " taught me to operationalise everything I know. I pulled ML out of notebooks, and into the workflows of a regulated enterprise. I built pipelines that structured un-structured data at scale - all the while ensuring that safety measures like kill switches, model monitoring and rollback strategies were top of mind.",
     ],
   },
   {
@@ -89,13 +88,13 @@ export const NARRATIVE: Chapter[] = [
     content: [
       "Now as a co-founder at ",
       link("Vern", "https://www.vern.so/"),
-      ", agents do document structuring I used to hand-build - purpose-built for data migration during customer onboarding. The agentic harness for keeping models accurate, reliable and interpretable sit underneath it.",
+      ", I engineer agents to do the document structuring that I would previously hand-build, in a platform purpose-built for large-scale data migrations. My prior work feeds my current skillset as technical founder, priming me to design the security infrastructure and agentic harness that maintains our models as safe, reliable, and interpretable systems.",
     ],
   },
   {
     id: "outro",
     content: [
-      "If you want to talk: ",
+      "If you'd like to chat about any of the above, please reach out:",
       link("roupenm@me.com", "mailto:roupenm@me.com"),
       ", ",
       link("cal.com/roupen-minassian", "https://cal.com/roupen-minassian/15min"),
