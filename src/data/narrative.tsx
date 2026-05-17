@@ -72,7 +72,7 @@ export const NARRATIVE: Chapter[] = [
       ),
       ", clustered usage patterns inside digital twin models with ",
       link("DSI", "https://www.uts.edu.au/research/data-science-institute"),
-      ", and built explainable models with interpretable interfaces at",
+      ", and built explainable models with interpretable interfaces at ",
       link("HCAI Lab", "https://www.uts.edu.au/research/human-centred-ai"),
       ". I learnt the importance of strategy and developed the agency to shape projects from problem to delivery."
     ],
