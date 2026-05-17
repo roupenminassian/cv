@@ -37,7 +37,7 @@ export const NARRATIVE: Chapter[] = [
   {
     id: "study",
     content: [
-      "It started with neuroscience at the ",
+      "It started with a passion for neuroscience at the ",
       link("University of Sydney", "https://www.sydney.edu.au/"),
       " - learning about how information flows through the brain and the craft of thinking in systems.",
     ],
@@ -45,12 +45,13 @@ export const NARRATIVE: Chapter[] = [
   {
     id: "datapoint",
     content: [
+      "At ",
       link("DataPoint Armenia", "https://www.datapoint.am/projects"),
-      " threw me into realm of data science. I developed a taste for NLP whilst interpreting information flows in online media - revealing the false narratives moving through social networks, and the signatures they leave behind. ",
+      ", I developed a taste for NLP whilst interpreting information flows in online media - revealing the false narratives moving through social networks, and the signatures they leave behind. ",
       link("Forbes", "https://www.forbes.com/sites/jackieabramian/2021/09/27/a-year-after-unleashing-war-crimes-against-indigenous-armenians-azerbaijans-threats-and-violations-continue/"),
-      " wrote about our work, ",
+      " wrote about our work and ",
       strike("Twitter"),
-      " X updated its policies from our insights.",
+      " X updated its policies from our insights. That's when the scale and impact of what data science can do landed for me.",
     ],
   },
   {
@@ -71,9 +72,9 @@ export const NARRATIVE: Chapter[] = [
       ),
       ", clustered usage patterns inside digital twin models with ",
       link("DSI", "https://www.uts.edu.au/research/data-science-institute"),
-      "and built explainable models with interpretable interfaces at",
+      ", and built explainable models with interpretable interfaces at",
       link("HCAI Lab", "https://www.uts.edu.au/research/human-centred-ai"),
-      "I learnt the importance of strategy and developed the agency to shape projects from problem to delivery."
+      ". I learnt the importance of strategy and developed the agency to shape projects from problem to delivery."
     ],
   },
   {
