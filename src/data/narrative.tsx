@@ -47,7 +47,7 @@ export const NARRATIVE: Chapter[] = [
     content: [
       "At ",
       link("DataPoint Armenia", "https://www.datapoint.am/projects"),
-      ", I developed a taste for NLP whilst interpreting information flows in online media - revealing the false narratives moving through social networks, and the signatures they leave behind. ",
+      ", I developed a taste for NLP while interpreting information flows in online media, revealing the false narratives moving through social networks, and the signatures they leave behind. ",
       link("Forbes", "https://www.forbes.com/sites/jackieabramian/2021/09/27/a-year-after-unleashing-war-crimes-against-indigenous-armenians-azerbaijans-threats-and-violations-continue/"),
       " wrote about our work and ",
       strike("Twitter"),
