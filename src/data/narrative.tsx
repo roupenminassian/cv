@@ -89,7 +89,7 @@ export const NARRATIVE: Chapter[] = [
     content: [
       "Now as a co-founder at ",
       link("Vern", "https://www.vern.so/"),
-      ", agents do document structuring I used to hand-build - purpose-built for data migration during customer onboarding. The production instincts and the agentic harness for keeping models accurate and reliable sit underneath it.",
+      ", agents do document structuring I used to hand-build - purpose-built for data migration during customer onboarding. The agentic harness for keeping models accurate, reliable and interpretable sit underneath it.",
     ],
   },
   {
